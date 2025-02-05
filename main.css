@@ -1,0 +1,108 @@
+@font-face {
+    font-family: homa;
+    src: url(./Font/B\ Homa_0.ttf);
+}
+
+* {
+    font-family: homa;
+}
+
+.container-fluid {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    height: 100vh;
+    background: url(./Img/بک\ گراند\ 4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background: linear-gradient(248deg, rgb(246, 184, 0), rgb(4, 233, 233)); */
+}
+
+.search {
+    margin-top: 30px;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.search-box {
+    padding: 30px 60px;
+}
+
+.search-box input {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    width: 80%;
+}
+
+.search-box button {
+    border: none;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+}
+
+.btn-search img {
+    border-radius: 50%;
+    width: 20px;
+}
+
+.img-weather p {
+    font-size: 2rem;
+}
+
+.img-weather {
+    display: none;
+}
+
+
+
+.loader {
+    display: none;
+    margin-right: 60px;
+    width: 80px;
+    height: 40px;
+    border-radius: 100px 100px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    inset: 0 0 -100%;
+    background:
+        radial-gradient(farthest-side, #ffd738 80%, #0000) left 70% top 20%/15px 15px,
+        radial-gradient(farthest-side, #020308 92%, #0000) left 65% bottom 19%/12px 12px,
+        radial-gradient(farthest-side, #ecfefe 92%, #0000) left 70% bottom 20%/15px 15px,
+        linear-gradient(#9eddfe 50%, #020308 0);
+    background-repeat: no-repeat;
+    animation: l5 2s infinite;
+}
+
+@keyframes l5 {
+
+    0%,
+    20% {
+        transform: rotate(0)
+    }
+
+    40%,
+    60% {
+        transform: rotate(.5turn)
+    }
+
+    80%,
+    100% {
+        transform: rotate(1turn)
+    }
+}

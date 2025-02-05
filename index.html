@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="icon website" href="./Img/free-colorful-rainbow-and-blue-clouds-icon-16557.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.min.css">
+    <title>App Weather</title>
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+
+        <div class="search">
+            <div class="search-box">
+                <input class="search-city" type="text" placeholder="شهر مورد نظر را وارد کنید">
+
+                <button onclick="btnClickSeacrh()" class="btn-search"><img src="./Img/سرچ.png" alt=""></button>
+                <p class="error-message text-center h5 mt-4"></p>
+                <div class="loader"></div>
+            </div>
+            <div class="img-weather text-center">
+                <img class="weather-img" width="160px" src="" alt="">
+                <p class="degre" dir="ltr"></p>
+                <p class="city-name"></p>
+                <div class="row">
+                    <div class="col-6">
+                        <img width="100px" src="./Img/free-blue-wind-icon-16544.png" alt="">
+                        <p>سرعت باد</p>
+                        <p class="speed-wind" dir="ltr"></p>
+                    </div>
+                    <div class="col-6">
+                        <img width="100px" src="./Img/free-blue-thermometer-and-cold-icon-16548.png" alt="">
+                        <p>رطوبت</p>
+                        <p class="rotobat"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
