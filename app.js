@@ -9,29 +9,6 @@ const weatherImg = document.querySelector('.weather-img');
 const apiKey = '28a9573907cb25eb0d6150272db8eae8';
 const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=';
 
-window.onload = async function () {
-    try {
-
-        const response = await fetch('http://ip-api.com/json');
-        const data = await response.json();
-        console.log(data)
-
-    } catch (error) {
-
-        Swal.fire({
-            title: 'اینترنت شما وصل نیست',
-            text: 'جهت جستجو کردن شهر خود باید به اینترنت متصل باشید !',
-            icon: 'error',
-            confirmButtonText: 'تایید',
-            timer: '6000',
-            timerProgressBar: true,
-            didOpen: (toast) => {
-                toast.onmouseleave = Swal.resumeTimer;
-            }
-        })
-
-    }
-};
 
 async function checkWeather(city) {
     try {
